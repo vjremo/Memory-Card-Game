@@ -6,6 +6,8 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 html,
@@ -106,4 +108,80 @@ h1 {
 .score-panel .restart {
     float: right;
     cursor: pointer;
+}
+
+/*Media query for responsiveness*/
+@media screen and (max-width: 450px){
+    header, .score-panel, .deck{
+        display: flex;
+        justify-content: space-between;
+    }
+    .deck{
+    height: auto;
+    max-width: 100%;
+    }
+}
+
+/* Styles for modal backgroud
+ Parts of the styles below are inspired from
+ Source - https://matthewcranford.com/memory-game-walkthrough-part-7-making-a-modal/
+ */
+.modal_bg{
+    position: absolute;
+    top :0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.363)
+}
+/* Styles for modal body*/
+.modal_body{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    background: white;
+    transform: translate(-50%, -70%);
+}
+/* Style to hide modal*/
+.vanish{
+    display: none;
+}
+/* Style for modal heading elements*/
+.modal_heading{
+    text-align: center;
+    padding-bottom: 1em;
+}
+/* Style for stats displayed in modal*/
+.game_stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+/* Style for modal buttons*/
+.modal_buttons{
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+}
+.cancel_button,.replay_button {
+    height: 48px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0.25rem 0.25rem;
+}
+.cancel_button{
+    background: orangered;
+}
+.replay_button{
+    background: deepskyblue;
+}
+button:hover,
+button:focus {
+    background: #0a2841;
 }
