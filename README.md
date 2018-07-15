@@ -1,5 +1,7 @@
 # Memory Game Project by Vijay
 
+This game is created from Udacity's [Memory Game](https://github.com/udacity/fend-project-memory-game)
+
 ## Table of Contents
 
 * [Demo](#demo)
