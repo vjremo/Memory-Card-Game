@@ -7,7 +7,7 @@
 * [Instructions](#instructions)
 
 ## Demo
-[Game Demo](https://vjremo.github.io/fend-project-memory-game/)
+[Game Demo](https://vjremo.github.io/Memory-Card-Game/)
 
 ## Gameplay
 
@@ -17,5 +17,5 @@ The objective is to pair all the matching cards.
 
 ## Instructions
 
-Download the game archive from this [link](https://github.com/vjremo/fend-project-memory-game/releases), extract it to local folder. 
+Download the game archive from this [link](https://github.com/vjremo/Memory-Card-Game/releases), extract it to local folder. 
 Open the index.html in browser to launch the game. 
